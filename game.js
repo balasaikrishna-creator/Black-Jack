@@ -193,7 +193,7 @@ function newGame() {
 }
 
 function quitGame(){
-    window.location.href = "login.html"
+    window.location.href = "index.html"
     localStorage.removeItem("playerName")
     localStorage.removeItem("amount")
 }
