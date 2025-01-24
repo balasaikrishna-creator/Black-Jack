@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Blackjack Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="quit-class">
+            <button id="quit-game" onclick="quitGame()">QUIT GAME</button> 
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <h1 style="margin: 0px;">Blackjack</h1>
+            <span class="info-icon">
+                <img src="./images/info.png" alt="info-icon" id="info-icon"/>
+                <span class="tooltip">Blackjack is a popular card game where players try to get 
+                    a hand value of 21 or as close to it as possible without going over.</span>
+            </span>
+        </div>
+        
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
+        <p id="dealer-sum-el"></p>
+        <button id="start-game" onclick="startGame()">START GAME</button>
+        <button id="new-card" onclick="newCard()">NEW CARD</button>
+        <button id="surrender" onclick="surrender()">SURRENDER</button>
+        <button id="show-cards" onclick="showCards()">SHOW CARDS</button>
+        <button id="new-game" onclick="newGame()">NEW GAME</button>
+        <p id="player-el"></p>
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>

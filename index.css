@@ -1,0 +1,137 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background-image: url("blackjack.png");
+    background-size: cover;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    height: 100;
+}
+
+.container {
+    background: silver;
+    max-width: 80%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    
+}
+
+h1 {
+    color: rgb(37, 19, 102);
+    
+}
+
+#message-el {
+    font-style: italic;
+}
+ 
+button {
+    color: rgb(37, 19, 102);
+    width: 150px;
+    background-color: goldenrod;
+    border: black;
+    border-radius: 2px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+#new-game {
+    display: flex;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    margin-top: 16px;
+    margin-left: 540px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+button:disabled{
+    background-color: grey;   
+}
+
+p {
+    color: rgb(37, 19, 102);
+}
+
+label {
+    color: rgb(37, 19, 102);
+}
+
+#quit-game{
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.quit-class{
+    display: flex;
+}
+
+#alert{
+    color: red;
+}
+
+.info-icon {
+    display: inline-block;
+    margin-left: 7px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 7px;
+}
+
+.info-icon .tooltip {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: rgb(37, 19, 102);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    z-index: 1;
+}
+
+.info-icon:hover .tooltip {
+    display: block;
+    font-style: italic;
+    color: silver;
+}
+
+#info-icon{
+    position: relative;
+    height: 15px;
+}
+
+.user-input{
+    background-color : silver;
+    border : 2px solid rgb(37, 19, 102);
+    border-radius : 5px;
+    color: rgb(37, 19, 102);
+    font-weight: bold;
+}
+.user-input:focus{
+    outline: none
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid label {
+    grid-column: 1;
+}
+
+.grid .user-input {
+    grid-column: 2;
+    width: fit-content;
+}
